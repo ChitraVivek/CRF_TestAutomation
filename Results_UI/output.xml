@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20190617 23:57:29.167" rpa="false">
+<suite id="s1" name="CRF Flasky Tests" source="C:\Users\E102024\CRF_TestAutomation\TestCases\CRF_Flasky_Tests.robot">
+<test id="s1-t1" name="App Main page">
+<kw name="Open Browser To Main Page" library="Resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${APP URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:29.472" level="INFO">Opening browser 'Firefox' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20190617 23:57:29.471" endtime="20190617 23:57:36.010"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>index page - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:36.019" level="INFO">Page title is 'index page - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:36.010" endtime="20190617 23:57:36.019"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:29.471" endtime="20190617 23:57:36.019"></status>
+</kw>
+<kw name="Main Page Should Be Open" library="Resource">
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Demo app</arg>
+</arguments>
+<msg timestamp="20190617 23:57:36.033" level="INFO">Current page contains link 'Demo app'.</msg>
+<status status="PASS" starttime="20190617 23:57:36.020" endtime="20190617 23:57:36.033"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>index page</arg>
+</arguments>
+<msg timestamp="20190617 23:57:36.047" level="INFO">Current page contains text 'index page'.</msg>
+<status status="PASS" starttime="20190617 23:57:36.033" endtime="20190617 23:57:36.048"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:57:36.056" level="INFO">Current page contains link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:57:36.048" endtime="20190617 23:57:36.056"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Register</arg>
+</arguments>
+<msg timestamp="20190617 23:57:36.063" level="INFO">Current page contains link 'Register'.</msg>
+<status status="PASS" starttime="20190617 23:57:36.056" endtime="20190617 23:57:36.063"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:36.020" endtime="20190617 23:57:36.063"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190617 23:57:36.064" endtime="20190617 23:57:36.725"></status>
+</kw>
+<doc>ChecK Main page</doc>
+<tags>
+<tag>MainPage</tag>
+</tags>
+<status status="PASS" starttime="20190617 23:57:29.471" endtime="20190617 23:57:36.726" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Check Registration page">
+<kw name="Open Browser To Main Page" library="Resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${APP URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:36.729" level="INFO">Opening browser 'Firefox' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20190617 23:57:36.729" endtime="20190617 23:57:42.763"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>index page - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:42.769" level="INFO">Page title is 'index page - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:42.763" endtime="20190617 23:57:42.769"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:36.729" endtime="20190617 23:57:42.769"></status>
+</kw>
+<kw name="Open Registration Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Register</arg>
+</arguments>
+<msg timestamp="20190617 23:57:42.771" level="INFO">Clicking link 'Register'.</msg>
+<status status="PASS" starttime="20190617 23:57:42.770" endtime="20190617 23:57:42.873"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Register - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:42.876" level="INFO">Page title is 'Register - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:42.873" endtime="20190617 23:57:42.877"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:57:42.896" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:57:42.877" endtime="20190617 23:57:42.896"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:57:42.907" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:57:42.897" endtime="20190617 23:57:42.908"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>First name</arg>
+</arguments>
+<msg timestamp="20190617 23:57:42.915" level="INFO">Current page contains text 'First name'.</msg>
+<status status="PASS" starttime="20190617 23:57:42.908" endtime="20190617 23:57:42.915"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Family Name</arg>
+</arguments>
+<msg timestamp="20190617 23:57:42.925" level="INFO">Current page contains text 'Family Name'.</msg>
+<status status="PASS" starttime="20190617 23:57:42.915" endtime="20190617 23:57:42.925"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Phone number</arg>
+</arguments>
+<msg timestamp="20190617 23:57:42.933" level="INFO">Current page contains text 'Phone number'.</msg>
+<status status="PASS" starttime="20190617 23:57:42.925" endtime="20190617 23:57:42.933"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:42.770" endtime="20190617 23:57:42.934"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190617 23:57:42.934" endtime="20190617 23:57:43.615"></status>
+</kw>
+<doc>Verify Registration page</doc>
+<tags>
+<tag>RegistrationPage</tag>
+</tags>
+<status status="PASS" starttime="20190617 23:57:36.727" endtime="20190617 23:57:43.615" critical="yes"></status>
+</test>
+<test id="s1-t3" name="New User Register">
+<kw name="Open Browser To Main Page" library="Resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${APP URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:43.615" level="INFO">Opening browser 'Firefox' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20190617 23:57:43.615" endtime="20190617 23:57:49.675"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>index page - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.683" level="INFO">Page title is 'index page - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.675" endtime="20190617 23:57:49.683"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:43.615" endtime="20190617 23:57:49.683"></status>
+</kw>
+<kw name="Open Registration Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Register</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.684" level="INFO">Clicking link 'Register'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.684" endtime="20190617 23:57:49.755"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Register - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.759" level="INFO">Page title is 'Register - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.755" endtime="20190617 23:57:49.759"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.785" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.759" endtime="20190617 23:57:49.785"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.794" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.785" endtime="20190617 23:57:49.794"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>First name</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.801" level="INFO">Current page contains text 'First name'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.794" endtime="20190617 23:57:49.801"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Family Name</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.809" level="INFO">Current page contains text 'Family Name'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.801" endtime="20190617 23:57:49.809"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Phone number</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.816" level="INFO">Current page contains text 'Phone number'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.809" endtime="20190617 23:57:49.816"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:49.684" endtime="20190617 23:57:49.816"></status>
+</kw>
+<kw name="Register New User" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:username</arg>
+<arg>${New_Username}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.818" level="INFO">Typing text 'xyz' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.818" endtime="20190617 23:57:49.845"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:password</arg>
+<arg>${New_Password}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.846" level="INFO">Typing text 'xyz123' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.846" endtime="20190617 23:57:49.869"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:firstname</arg>
+<arg>${New_Firstname}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.870" level="INFO">Typing text 'FirstN' into text field 'id:firstname'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.869" endtime="20190617 23:57:49.895"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:lastname</arg>
+<arg>${New_Familyname}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.896" level="INFO">Typing text 'FamilyN' into text field 'id:lastname'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.896" endtime="20190617 23:57:49.925"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:phone</arg>
+<arg>${New_Phone}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.926" level="INFO">Typing text '1234567890' into text field 'id:phone'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.926" endtime="20190617 23:57:49.954"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Register</arg>
+</arguments>
+<msg timestamp="20190617 23:57:49.954" level="INFO">Clicking button 'Register'.</msg>
+<status status="PASS" starttime="20190617 23:57:49.954" endtime="20190617 23:57:50.000"></status>
+</kw>
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.001" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.001" endtime="20190617 23:57:50.050"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.053" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.050" endtime="20190617 23:57:50.054"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.060" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.054" endtime="20190617 23:57:50.060"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.073" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.060" endtime="20190617 23:57:50.073"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:50.000" endtime="20190617 23:57:50.074"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.080" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.074" endtime="20190617 23:57:50.080"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.106" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.080" endtime="20190617 23:57:50.106"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.113" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.106" endtime="20190617 23:57:50.113"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:49.817" endtime="20190617 23:57:50.113"></status>
+</kw>
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.114" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.114" endtime="20190617 23:57:50.153"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.155" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.153" endtime="20190617 23:57:50.155"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.167" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.156" endtime="20190617 23:57:50.167"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.176" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.167" endtime="20190617 23:57:50.176"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:50.114" endtime="20190617 23:57:50.176"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190617 23:57:50.177" endtime="20190617 23:57:50.846"></status>
+</kw>
+<doc>Register New User</doc>
+<tags>
+<tag>NewUserRegistrationPage</tag>
+</tags>
+<status status="PASS" starttime="20190617 23:57:43.615" endtime="20190617 23:57:50.847" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Check Login page">
+<kw name="Open Browser To Main Page" library="Resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${APP URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:50.849" level="INFO">Opening browser 'Firefox' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20190617 23:57:50.849" endtime="20190617 23:57:56.860"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>index page - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:56.865" level="INFO">Page title is 'index page - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:56.861" endtime="20190617 23:57:56.865"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:50.849" endtime="20190617 23:57:56.866"></status>
+</kw>
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:57:56.867" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:57:56.866" endtime="20190617 23:57:56.931"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:57:56.934" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:57:56.932" endtime="20190617 23:57:56.934"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:57:56.951" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:57:56.934" endtime="20190617 23:57:56.951"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:57:56.963" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:57:56.951" endtime="20190617 23:57:56.964"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:56.866" endtime="20190617 23:57:56.964"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190617 23:57:56.964" endtime="20190617 23:57:57.730"></status>
+</kw>
+<doc>Verify Login page</doc>
+<tags>
+<tag>LoginPage</tag>
+</tags>
+<status status="PASS" starttime="20190617 23:57:50.848" endtime="20190617 23:57:57.730" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Check Invalid login">
+<kw name="Open Browser To Main Page" library="Resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${APP URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190617 23:57:57.733" level="INFO">Opening browser 'Firefox' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20190617 23:57:57.733" endtime="20190617 23:58:03.804"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>index page - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:03.809" level="INFO">Page title is 'index page - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:03.804" endtime="20190617 23:58:03.809"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:57:57.732" endtime="20190617 23:58:03.809"></status>
+</kw>
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:03.810" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:03.810" endtime="20190617 23:58:03.902"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:03.906" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:03.902" endtime="20190617 23:58:03.906"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:58:03.927" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:58:03.907" endtime="20190617 23:58:03.928"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:58:03.937" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:58:03.928" endtime="20190617 23:58:03.938"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:03.810" endtime="20190617 23:58:03.938"></status>
+</kw>
+<kw name="Invalid Username" library="Resource">
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:03.939" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:03.939" endtime="20190617 23:58:03.986"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:03.990" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:03.986" endtime="20190617 23:58:03.990"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.001" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:58:03.990" endtime="20190617 23:58:04.001"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.009" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.001" endtime="20190617 23:58:04.010"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:03.939" endtime="20190617 23:58:04.010"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:username</arg>
+<arg>${Invalid_Username}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.010" level="INFO">Typing text 'lmno' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.010" endtime="20190617 23:58:04.039"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:password</arg>
+<arg>${New_Password}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.039" level="INFO">Typing password into text field 'id:password'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.039" endtime="20190617 23:58:04.062"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.062" level="INFO">Clicking button 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.062" endtime="20190617 23:58:04.124"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Login Failure</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.134" level="INFO">Current page contains text 'Login Failure'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.124" endtime="20190617 23:58:04.135"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:03.938" endtime="20190617 23:58:04.135"></status>
+</kw>
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.135" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.135" endtime="20190617 23:58:04.178"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.186" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.179" endtime="20190617 23:58:04.186"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.193" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.186" endtime="20190617 23:58:04.193"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.201" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.194" endtime="20190617 23:58:04.201"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:04.135" endtime="20190617 23:58:04.201"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190617 23:58:04.202" endtime="20190617 23:58:04.983"></status>
+</kw>
+<doc>Verify Invalid user login</doc>
+<tags>
+<tag>InvalidUserLogin</tag>
+</tags>
+<status status="PASS" starttime="20190617 23:57:57.732" endtime="20190617 23:58:04.984" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Check Invalid Password">
+<kw name="Open Browser To Main Page" library="Resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${APP URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:04.986" level="INFO">Opening browser 'Firefox' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20190617 23:58:04.986" endtime="20190617 23:58:11.070"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>index page - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.079" level="INFO">Page title is 'index page - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.070" endtime="20190617 23:58:11.079"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:04.986" endtime="20190617 23:58:11.079"></status>
+</kw>
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.081" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.080" endtime="20190617 23:58:11.176"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.181" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.176" endtime="20190617 23:58:11.181"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.198" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.182" endtime="20190617 23:58:11.198"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.206" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.198" endtime="20190617 23:58:11.206"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:11.080" endtime="20190617 23:58:11.206"></status>
+</kw>
+<kw name="Invalid Password" library="Resource">
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.207" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.206" endtime="20190617 23:58:11.252"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.255" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.252" endtime="20190617 23:58:11.255"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.267" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.255" endtime="20190617 23:58:11.268"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.277" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.268" endtime="20190617 23:58:11.277"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:11.206" endtime="20190617 23:58:11.277"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:username</arg>
+<arg>${New_Username}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.278" level="INFO">Typing text 'xyz' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.278" endtime="20190617 23:58:11.305"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:password</arg>
+<arg>${Invalid_Password}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.306" level="INFO">Typing password into text field 'id:password'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.305" endtime="20190617 23:58:11.327"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.327" level="INFO">Clicking button 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.327" endtime="20190617 23:58:11.617"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Login Failure</arg>
+</arguments>
+<msg timestamp="20190617 23:58:11.628" level="INFO">Current page contains text 'Login Failure'.</msg>
+<status status="PASS" starttime="20190617 23:58:11.617" endtime="20190617 23:58:11.629"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:11.206" endtime="20190617 23:58:11.629"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190617 23:58:11.630" endtime="20190617 23:58:12.288"></status>
+</kw>
+<doc>Verify Invalid password</doc>
+<tags>
+<tag>Invalid Password</tag>
+</tags>
+<status status="PASS" starttime="20190617 23:58:04.985" endtime="20190617 23:58:12.289" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Check Valid user login">
+<kw name="Open Browser To Main Page" library="Resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${APP URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:12.292" level="INFO">Opening browser 'Firefox' to base url 'http://127.0.0.1:8080/'.</msg>
+<status status="PASS" starttime="20190617 23:58:12.291" endtime="20190617 23:58:18.342"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>index page - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.348" level="INFO">Page title is 'index page - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.342" endtime="20190617 23:58:18.348"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:12.291" endtime="20190617 23:58:18.348"></status>
+</kw>
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.350" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.349" endtime="20190617 23:58:18.425"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.427" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.425" endtime="20190617 23:58:18.427"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.441" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.427" endtime="20190617 23:58:18.441"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.449" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.442" endtime="20190617 23:58:18.449"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:18.349" endtime="20190617 23:58:18.449"></status>
+</kw>
+<kw name="Valid login" library="Resource">
+<kw name="Open Login Page" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.451" level="INFO">Clicking link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.451" endtime="20190617 23:58:18.489"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>Log In - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.492" level="INFO">Page title is 'Log In - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.490" endtime="20190617 23:58:18.493"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.506" level="INFO">Current page contains text 'Username'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.493" endtime="20190617 23:58:18.506"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Password</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.514" level="INFO">Current page contains text 'Password'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.506" endtime="20190617 23:58:18.514"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:18.450" endtime="20190617 23:58:18.514"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:username</arg>
+<arg>${New_Username}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.514" level="INFO">Typing text 'xyz' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.514" endtime="20190617 23:58:18.540"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:password</arg>
+<arg>${New_Password}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.540" level="INFO">Typing password into text field 'id:password'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.540" endtime="20190617 23:58:18.561"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.561" level="INFO">Clicking button 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.561" endtime="20190617 23:58:18.846"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that current page title equals ``title``.</doc>
+<arguments>
+<arg>User Information - Demo App</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.849" level="INFO">Page title is 'User Information - Demo App'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.846" endtime="20190617 23:58:18.849"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>id:username</arg>
+<arg>${New_Username}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.855" level="INFO">Current page contains element 'id:username'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.849" endtime="20190617 23:58:18.855"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>id:firstname</arg>
+<arg>${New_Firstname}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.861" level="INFO">Current page contains element 'id:firstname'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.856" endtime="20190617 23:58:18.861"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>id:lastname</arg>
+<arg>${New_Familyname}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.865" level="INFO">Current page contains element 'id:lastname'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.861" endtime="20190617 23:58:18.865"></status>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>id:phone</arg>
+<arg>${New_Phone}</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.870" level="INFO">Current page contains element 'id:phone'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.865" endtime="20190617 23:58:18.870"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:18.450" endtime="20190617 23:58:18.870"></status>
+</kw>
+<kw name="Log Out" library="Resource">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>Log Out</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.871" level="INFO">Clicking link 'Log Out'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.871" endtime="20190617 23:58:18.922"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:18.871" endtime="20190617 23:58:18.922"></status>
+</kw>
+<kw name="Main Page Should Be Open" library="Resource">
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Demo app</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.929" level="INFO">Current page contains link 'Demo app'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.923" endtime="20190617 23:58:18.929"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>index page</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.938" level="INFO">Current page contains text 'index page'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.929" endtime="20190617 23:58:18.939"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Log In</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.944" level="INFO">Current page contains link 'Log In'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.939" endtime="20190617 23:58:18.944"></status>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<arguments>
+<arg>Register</arg>
+</arguments>
+<msg timestamp="20190617 23:58:18.952" level="INFO">Current page contains link 'Register'.</msg>
+<status status="PASS" starttime="20190617 23:58:18.944" endtime="20190617 23:58:18.953"></status>
+</kw>
+<status status="PASS" starttime="20190617 23:58:18.923" endtime="20190617 23:58:18.953"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20190617 23:58:18.954" endtime="20190617 23:58:19.616"></status>
+</kw>
+<doc>Verify Valid user login</doc>
+<tags>
+<tag>UserLogin</tag>
+</tags>
+<status status="PASS" starttime="20190617 23:58:12.290" endtime="20190617 23:58:19.617" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190617 23:57:29.170" endtime="20190617 23:58:19.619"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0">Critical Tests</stat>
+<stat pass="7" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Invalid Password</stat>
+<stat pass="1" fail="0">InvalidUserLogin</stat>
+<stat pass="1" fail="0">LoginPage</stat>
+<stat pass="1" fail="0">MainPage</stat>
+<stat pass="1" fail="0">NewUserRegistrationPage</stat>
+<stat pass="1" fail="0">RegistrationPage</stat>
+<stat pass="1" fail="0">UserLogin</stat>
+</tag>
+<suite>
+<stat pass="7" fail="0" id="s1" name="CRF Flasky Tests">CRF Flasky Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
