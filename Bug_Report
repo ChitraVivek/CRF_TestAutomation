@@ -1,0 +1,6 @@
+
+Bugs found
+1. 'Token' is not a mandatory request header for any of the API request.
+2. Authentication fails for any given specific user (api/auth/token)
+3. Requested URL(/api/users/) was not found on the server even when tried with browser directly.(I tried with SOAP UI)
+
