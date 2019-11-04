@@ -8,3 +8,6 @@
 
      robot -d Results_API REST/CRF_API_Get_Request.robot
      
+# To run Python REST API testcases
+     
+     py Get_Request.py   
